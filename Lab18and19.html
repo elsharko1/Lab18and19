@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+
+		<!-- this section is not viewable by the user. make comments using ! -->
+		<title>
+			Lab18/19
+		</title>
+
+		<style>
+		h1 {
+    		text-align: center;
+    	}
+    	
+		body {
+    		background-image: url("https://media.giphy.com/media/xRcRDKVvCQQFy/giphy.gif");
+    		background-repeat: no-repeat;
+    		background-size: 100%;
+			}
+
+			
+		</style>
+
+		
+		
+		</head>
+
+		<body>
+
+		<h1>
+		<font size="32">Welcome to Sharky's!!!</font>
+			<!--<img src="https://media.giphy.com/media/xRcRDKVvCQQFy/giphy.gif" style="width:1520px;height:768px;">-->
+
+		</h1>
+		 <!--background = "https://media.giphy.com/media/xRcRDKVvCQQFy/giphy.gif" > -->
+		 <p>Here is a link to my Linkedin</p>
+		 <a href="https://www.linkedin.com/in/markritter423/">Mark Ritter Linkedin</a>
+		 <br>
+		 <br>
+			
+				<form>
+			Cheese Burger: 
+			<!--<input type = "submit" value = "Burger me" ">-->
+			<!--<button onclick ="addToCartBurger()">Burger Me</button>		-->
+			<input type="button" value="Burger Me" id="countButton" > <span id="displayCount">0</span> Cheese Burgers
+			
+			<!--<input type = "text" name="Cheese Burger">-->
+			<br>
+			Wings:
+			<input type="button" value="Wing Me" id="countButton1" > <span id="displayCount1">0</span> Wings
+			<br>
+			Fries:
+			<input type="button" value="Fry Me" id="countButton2" > <span id="displayCount2">0</span> Fries
+			<br>
+			Bells Two Hearted:
+			<input type="button" value="Beer Me" id="countButton3" > <span id="displayCount3">0</span> Beers
+			<br>
+			Scotch:
+			<input type="button" value="Scotch Me" id="countButton4" > <span id="displayCount4">0</span> Shots
+			<br>
+			</form>
+			<br>
+			<form>
+				<input type="submit" value ="Total Order">
+			</form>
+			
+			<br>
+			<p id = "addToCartBurger">click me
+			</p>
+
+		<!--<input type="button" value="Count" id="countButton" >The button was pressed <span id="displayCount">0</span> times.-->
+
+    <!--<p>The button was pressed <span id="displayCount">0</span> times.</p>-->
+
+    <script type="text/javascript">
+      var count = 0;
+      var count1 = 0;
+      var count2 = 0;
+      var count3 = 0;
+      var count4 = 0;
+      var button = document.getElementById("countButton");
+      
+      var display = document.getElementById("displayCount");
+      var button1 = document.getElementById("countButton1");
+      
+      var display1 = document.getElementById("displayCount1");
+      var button2 = document.getElementById("countButton2");
+      
+      var display2 = document.getElementById("displayCount2");
+      var button3 = document.getElementById("countButton3");
+      
+      var display3 = document.getElementById("displayCount3");
+      var button4 = document.getElementById("countButton4");
+      
+      var display4 = document.getElementById("displayCount4");
+      
+
+
+      
+      
+
+
+      button.onclick = function(){
+        count++;
+        count1++;
+        count2++;
+        count3++;
+        count4++;
+        display.innerHTML = count;
+        display1.innerHTML = count1;
+        display2.innerHTML = count2;
+        display3.innerHTML = count3;
+        display4.innerHTML = count4;
+      }
+      
+    </script>
+		
+
+		<br>
+
+		<script>
+
+			var numItems = [0,0,0,0,0];
+			var prices = [5, 5, 3, 4, 6];
+			
+		
+		function addToCartBurger(){
+			var currentNum = numItems[0];
+			currentNum = currentNum +1;
+			numItems[0].Value=currentNum;
+			console.log(numItems[0]);
+
+			return numItems;
+
+		}
+
+		
+			document.getElementById("addToCartBurger").innerHTML = count;
+
+		
+		
+		</script>
+
+	<!--<img src="C:\Users\Mark\Pictures\LinkedinTempPic.jpg" > -->
+	
+				</body>
+	</html>
